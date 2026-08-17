@@ -181,7 +181,7 @@ const footerHTML = `
         <a href="employment-support.html">就労支援B型</a>
         <a href="recruit.html">採用情報</a>
         <a href="company.html">会社概要</a>
-        <a href="#" class="footer-line" target="_blank" rel="noopener">${lineIconSVG}お問い合わせ</a>
+        <a href="#" class="footer-line" target="_blank" rel="noopener">${lineIconSVG}でお問い合わせ</a>
       </nav>
     </div>
 
@@ -210,10 +210,22 @@ const injectFooter = () => {
 };
 
 /* ===============================
+   グループホーム LINE CTA
+================================ */
+const groupHomeLineCTAHTML = `${lineIconSVG}<span>でお問い合わせ</span>`;
+
+const injectGroupHomeLineCTAs = () => {
+  document.querySelectorAll("[data-line-cta]").forEach(el => {
+    el.innerHTML = groupHomeLineCTAHTML;
+  });
+};
+
+/* ===============================
    実行
 ================================ */
 document.addEventListener("DOMContentLoaded", () => {
   injectHeader();
   injectFooter();
   injectContactMethods();
+  injectGroupHomeLineCTAs();
 });
