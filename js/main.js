@@ -42,7 +42,7 @@ const headerHTML = `
       <a href="employment-support.html" class="drawer-item">就労支援B型</a>
       <a href="recruit.html" class="drawer-item">採用情報</a>
       <a href="company.html" class="drawer-item">会社概要</a>
-      <a href="#" class="drawer-item drawer-line" target="_blank" rel="noopener">${lineIconSVG}LINEお問い合わせ</a>
+      <a href="#" class="drawer-item drawer-line" target="_blank" rel="noopener">${lineIconSVG}お問い合わせ</a>
     </nav>
   </div>
 </div>
