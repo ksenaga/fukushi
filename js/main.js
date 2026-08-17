@@ -38,7 +38,7 @@ const contactMethodsHTML = `
     <span class="contact-item-divider"></span>
     <div class="contact-item-body">
       <span class="contact-item-label">LINEでのお問い合わせ</span>
-      <a href="#" class="contact-btn contact-btn--line" target="_blank" rel="noopener">→ LINEでお問い合わせ</a>
+      <a href="https://lin.ee/Vwj2gxV" class="contact-btn contact-btn--line" target="_blank" rel="noopener">→ LINEでお問い合わせ</a>
     </div>
   </div>
 </section>
@@ -72,7 +72,7 @@ const headerHTML = `
       <a href="employment-support.html">就労支援B型</a>
       <a href="recruit.html">採用情報</a>
       <a href="company.html">会社概要</a>
-      <a href="#" class="nav-line" target="_blank" rel="noopener">${lineIconSVG}でお問い合わせ</a>
+      <a href="https://lin.ee/Vwj2gxV" class="nav-line" target="_blank" rel="noopener">${lineIconSVG}でお問い合わせ</a>
     </nav>
 
     <button class="menu-btn" id="menuBtn" aria-label="menu">
@@ -95,7 +95,7 @@ const headerHTML = `
       <a href="employment-support.html" class="drawer-item">就労支援B型</a>
       <a href="recruit.html" class="drawer-item">採用情報</a>
       <a href="company.html" class="drawer-item">会社概要</a>
-      <a href="#" class="drawer-item drawer-line" target="_blank" rel="noopener">${lineIconSVG}お問い合わせ</a>
+      <a href="https://lin.ee/Vwj2gxV" class="drawer-item drawer-line" target="_blank" rel="noopener">${lineIconSVG}お問い合わせ</a>
     </nav>
   </div>
 </div>
@@ -181,7 +181,7 @@ const footerHTML = `
         <a href="employment-support.html">就労支援B型</a>
         <a href="recruit.html">採用情報</a>
         <a href="company.html">会社概要</a>
-        <a href="#" class="footer-line" target="_blank" rel="noopener">${lineIconSVG}でお問い合わせ</a>
+        <a href="https://lin.ee/Vwj2gxV" class="footer-line" target="_blank" rel="noopener">${lineIconSVG}でお問い合わせ</a>
       </nav>
     </div>
 
