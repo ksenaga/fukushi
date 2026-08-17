@@ -19,8 +19,8 @@ const contactMethodsHTML = `
     <span class="contact-item-divider"></span>
     <div class="contact-item-body">
       <span class="contact-item-label">お電話でのお問い合わせ</span>
-      <a href="tel:0000000000" class="contact-phone">000-0000-0000</a>
-      <span class="contact-fax">FAX：000-0000-0000</span>
+      <a href="tel:05037495455" class="contact-phone">050-3749-5455</a>
+      <span class="contact-fax">FAX：050-6868-9484</span>
     </div>
   </div>
 
