@@ -29,7 +29,7 @@ const contactMethodsHTML = `
     <span class="contact-item-divider"></span>
     <div class="contact-item-body">
       <span class="contact-item-label">メールでのお問い合わせ</span>
-      <a href="contact.html" class="contact-btn contact-btn--mail">→ メールフォームへ</a>
+      <a href="contact" class="contact-btn contact-btn--mail">→ メールフォームへ</a>
     </div>
   </div>
 
@@ -62,16 +62,16 @@ const injectContactMethods = () => {
 const headerHTML = `
 <header class="site-header">
   <div class="header-inner">
-    <a href="index.html" class="header-logo">
+    <a href="./" class="header-logo">
       <img src="images/three-tmiles.webp" alt="FUJI THREE" fetchpriority="high">
     </a>
 
     <nav class="pc-nav">
-      <a href="about.html">About</a>
-      <a href="group-homes.html">グループホーム一覧</a>
-      <a href="employment-support.html">就労支援B型</a>
-      <a href="recruit.html">採用情報</a>
-      <a href="company.html">会社概要</a>
+      <a href="about">About</a>
+      <a href="group-homes">グループホーム一覧</a>
+      <a href="employment-support">就労支援B型</a>
+      <a href="recruit">採用情報</a>
+      <a href="company">会社概要</a>
       <a href="https://lin.ee/XYxqGe5" class="nav-line" target="_blank" rel="noopener">${lineIconSVG}でお問い合わせ</a>
     </nav>
 
@@ -85,16 +85,16 @@ const headerHTML = `
   <button class="drawer-close" id="drawerClose" aria-label="close">×</button>
 
   <div class="drawer-inner">
-    <a href="index.html" class="drawer-logo">
+    <a href="./" class="drawer-logo">
       <img src="images/three-tmiles.webp" alt="FUJI THREE">
     </a>
 
     <nav class="drawer-nav">
-      <a href="about.html" class="drawer-item">About</a>
-      <a href="group-homes.html" class="drawer-item">グループホーム一覧</a>
-      <a href="employment-support.html" class="drawer-item">就労支援B型</a>
-      <a href="recruit.html" class="drawer-item">採用情報</a>
-      <a href="company.html" class="drawer-item">会社概要</a>
+      <a href="about" class="drawer-item">About</a>
+      <a href="group-homes" class="drawer-item">グループホーム一覧</a>
+      <a href="employment-support" class="drawer-item">就労支援B型</a>
+      <a href="recruit" class="drawer-item">採用情報</a>
+      <a href="company" class="drawer-item">会社概要</a>
       <a href="https://lin.ee/XYxqGe5" class="drawer-item drawer-line" target="_blank" rel="noopener">${lineIconSVG}お問い合わせ</a>
     </nav>
   </div>
@@ -171,16 +171,16 @@ const footerHTML = `
 <footer class="site-footer">
   <div class="footer-container">
     <div class="footer-top">
-      <a href="index.html" class="footer-logo">
+      <a href="./" class="footer-logo">
         <img src="images/three-tmiles.webp" alt="FUJI THREE">
       </a>
 
       <nav class="footer-nav">
-        <a href="about.html">About</a>
-        <a href="group-homes.html">グループホーム一覧</a>
-        <a href="employment-support.html">就労支援B型</a>
-        <a href="recruit.html">採用情報</a>
-        <a href="company.html">会社概要</a>
+        <a href="about">About</a>
+        <a href="group-homes">グループホーム一覧</a>
+        <a href="employment-support">就労支援B型</a>
+        <a href="recruit">採用情報</a>
+        <a href="company">会社概要</a>
         <a href="https://lin.ee/XYxqGe5" class="footer-line" target="_blank" rel="noopener">${lineIconSVG}でお問い合わせ</a>
       </nav>
     </div>

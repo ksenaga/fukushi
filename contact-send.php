@@ -4,7 +4,7 @@ declare(strict_types=1);
 mb_language("Japanese");
 mb_internal_encoding("UTF-8");
 
-const REDIRECT_BASE = "contact.html";
+const REDIRECT_BASE = "contact";
 
 // 文字数の上限
 const MAX_LENGTH_NAME    = 100;
