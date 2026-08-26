@@ -63,7 +63,7 @@ const headerHTML = `
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="header-logo">
-      <img src="images/three-tmiles.webp" alt="FUJI THREE">
+      <img src="images/three-tmiles.webp" alt="FUJI THREE" fetchpriority="high">
     </a>
 
     <nav class="pc-nav">
