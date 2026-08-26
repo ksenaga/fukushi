@@ -28,7 +28,7 @@ function redirect(string $query)
  */
 function isRateLimited(string $ip): bool
 {
-    $dir = __DIR__ . "/storage";
+    $dir = rtrim(sys_get_temp_dir(), "/") . "/fukushi_ratelimit";
     if (!is_dir($dir) && !@mkdir($dir, 0700, true) && !is_dir($dir)) {
         return false;
     }
