@@ -223,6 +223,68 @@ const injectGroupHomeLineCTAs = () => {
 };
 
 /* ===============================
+   右下固定ボタンをフッターの上で止める
+================================ */
+const pinAboveFooter = (btn, footer, gap = 24) => {
+  const update = () => {
+    const overlap = window.innerHeight - footer.getBoundingClientRect().top;
+
+    if (overlap > 0) {
+      btn.style.position = "absolute";
+      btn.style.bottom = "";
+      btn.style.top = `${footer.offsetTop - gap - btn.offsetHeight}px`;
+    } else {
+      btn.style.position = "fixed";
+      btn.style.top = "";
+      btn.style.bottom = `${gap}px`;
+    }
+  };
+
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+};
+
+/* ===============================
+   TOPへ戻るボタン（group-homes.html）
+================================ */
+const initBackToTop = () => {
+  const btn = document.querySelector(".back-to-top");
+  const footer = document.querySelector(".site-footer");
+  if (!btn || !footer) return;
+
+  pinAboveFooter(btn, footer);
+};
+
+/* ===============================
+   LINEフローティングボタン（group-homes.html以外）
+================================ */
+const initFloatingLine = () => {
+  if (location.pathname.includes("group-homes")) return;
+
+  const footer = document.querySelector(".site-footer");
+  if (!footer) return;
+
+  const btn = document.createElement("a");
+  btn.href = "https://lin.ee/XYxqGe5";
+  btn.className = "nav-line floating-line";
+  btn.target = "_blank";
+  btn.rel = "noopener";
+  btn.setAttribute("aria-label", "LINEでお問い合わせ");
+  btn.innerHTML = `${lineIconSVG}<span class="floating-line-text">でお問い合わせ</span>`;
+  document.body.appendChild(btn);
+
+  const update = () => {
+    const overlap = window.innerHeight - footer.getBoundingClientRect().top;
+    btn.style.display = overlap > 0 ? "none" : "";
+  };
+
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+};
+
+/* ===============================
    実行
 ================================ */
 document.addEventListener("DOMContentLoaded", () => {
@@ -230,4 +292,6 @@ document.addEventListener("DOMContentLoaded", () => {
   injectFooter();
   injectContactMethods();
   injectGroupHomeLineCTAs();
+  initBackToTop();
+  initFloatingLine();
 });

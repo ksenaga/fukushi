@@ -390,3 +390,26 @@ body.no-scroll {
     font-size: 18px;
   }
 }
+
+/* ===============================
+   LINEフローティングボタン（見た目はヘッダーの nav-line を流用）
+================================ */
+.floating-line {
+  position: fixed;
+  left: auto;
+  right: 24px;
+  bottom: 24px;
+  z-index: 900;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 500px) {
+  .floating-line {
+    padding: 12px !important;
+  }
+
+  .floating-line-text {
+    display: none;
+  }
+}
