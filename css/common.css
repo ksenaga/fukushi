@@ -123,6 +123,29 @@ a {
   display: none;
 }
 
+.nav-tel {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px !important;
+  border-radius: 999px;
+  background: #e8a07c;
+  font-weight: 700;
+  color: #fff !important;
+  white-space: nowrap;
+}
+
+.nav-tel svg {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  transform: scale(0.65);
+}
+
+.nav-tel::after {
+  display: none;
+}
+
 .line-icon {
   flex-shrink: 0;
 }
@@ -187,7 +210,7 @@ a {
 }
 
 .drawer-logo img {
-  height: 36px;
+  height: 90px;
   width: auto;
 }
 
@@ -220,6 +243,25 @@ a {
   background: var(--line-color);
   color: #fff !important;
   text-align: center;
+}
+
+.drawer-tel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: #e8a07c;
+  color: #fff !important;
+  text-align: center;
+}
+
+.drawer-tel svg {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  transform: scale(0.65);
 }
 
 /* Overlay */

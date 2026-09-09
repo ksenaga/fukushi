@@ -73,6 +73,7 @@ const headerHTML = `
       <a href="recruit">採用情報</a>
       <a href="company">会社概要</a>
       <a href="https://lin.ee/XYxqGe5" class="nav-line" target="_blank" rel="noopener">${lineIconSVG}でお問い合わせ</a>
+      <a href="tel:05037495455" class="nav-tel">${phoneIconSVG}050-3749-5455</a>
     </nav>
 
     <button class="menu-btn" id="menuBtn" aria-label="menu">
@@ -96,6 +97,7 @@ const headerHTML = `
       <a href="recruit" class="drawer-item">採用情報</a>
       <a href="company" class="drawer-item">会社概要</a>
       <a href="https://lin.ee/XYxqGe5" class="drawer-item drawer-line" target="_blank" rel="noopener">${lineIconSVG}お問い合わせ</a>
+      <a href="tel:05037495455" class="drawer-item drawer-tel">${phoneIconSVG}050-3749-5455</a>
     </nav>
   </div>
 </div>
