@@ -276,12 +276,13 @@ const initFloatingLine = () => {
 
   const update = () => {
     const overlap = window.innerHeight - footer.getBoundingClientRect().top;
-    btn.style.display = overlap > 0 ? "none" : "";
+    btn.classList.toggle("is-hidden", overlap > 0);
   };
 
   update();
   window.addEventListener("scroll", update, { passive: true });
   window.addEventListener("resize", update);
+  window.addEventListener("load", update);
 };
 
 /* ===============================

@@ -404,6 +404,10 @@ body.no-scroll {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
 }
 
+.floating-line.is-hidden {
+  display: none !important;
+}
+
 @media (max-width: 500px) {
   .floating-line {
     padding: 12px !important;
