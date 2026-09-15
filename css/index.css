@@ -47,6 +47,13 @@ section {
   pointer-events: none;
 }
 
+.hero-num-img {
+  display: block;
+  width: clamp(169px, 27.3vw, 403px);
+  height: auto;
+  margin-top: 150px;
+}
+
 .hero-inner {
   position: relative;
   z-index: 1;
@@ -88,11 +95,23 @@ h1.hero-title .accent {
   color: var(--orange-deep);
 }
 
+.hero-title-num {
+  height: 1.2em;
+  width: auto;
+  vertical-align: -0.12em;
+}
+
 .hero-lead {
   margin-top: 22px;
   font-size: 16px;
   color: var(--ink-soft);
   max-width: 46ch;
+}
+
+.hero-lead-logo {
+  height: 1.4em;
+  width: auto;
+  vertical-align: middle;
 }
 
 .hero-ctas {
