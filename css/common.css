@@ -70,6 +70,23 @@ a {
   display: block;
 }
 
+.header-logo img.header-logo-smile {
+  height: clamp(0px, 2vw, 45px);
+  margin-left: 10px;
+}
+
+@media (max-width: 900px) {
+  .header-logo img.header-logo-smile {
+    height: clamp(0px, 4.5vw, 45px);
+    margin-left: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .header-logo img.header-logo-smile {
+    display: none;
+  }
+}
+
 /* PC nav */
 .pc-nav {
   display: none;
@@ -144,6 +161,17 @@ a {
 
 .nav-tel::after {
   display: none;
+}
+
+@media (max-width: 1300px) {
+  .nav-line,
+  .nav-tel {
+    padding: 8px !important;
+  }
+
+  .nav-cta-text {
+    display: none;
+  }
 }
 
 .line-icon {

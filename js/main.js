@@ -64,6 +64,7 @@ const headerHTML = `
   <div class="header-inner">
     <a href="./" class="header-logo">
       <img src="images/logo/three-tmiles.webp" alt="FUJI THREE" fetchpriority="high">
+      <img class="header-logo-smile" src="images/logo/three_smile.webp" alt="THREE smiles">
     </a>
 
     <nav class="pc-nav">
@@ -72,8 +73,8 @@ const headerHTML = `
       <a href="employment-support">就労支援B型</a>
       <a href="recruit">採用情報</a>
       <a href="company">会社概要</a>
-      <a href="https://lin.ee/XYxqGe5" class="nav-line" target="_blank" rel="noopener">${lineIconSVG}でお問い合わせ</a>
-      <a href="tel:05037495455" class="nav-tel">${phoneIconSVG}050-3749-5455</a>
+      <a href="https://lin.ee/XYxqGe5" class="nav-line" target="_blank" rel="noopener">${lineIconSVG}<span class="nav-cta-text">でお問い合わせ</span></a>
+      <a href="tel:05037495455" class="nav-tel">${phoneIconSVG}<span class="nav-cta-text">050-3749-5455</span></a>
     </nav>
 
     <button class="menu-btn" id="menuBtn" aria-label="menu">
