@@ -63,7 +63,7 @@ const headerHTML = `
 <header class="site-header">
   <div class="header-inner">
     <a href="./" class="header-logo">
-      <img src="images/logo/three-tmiles.webp" alt="FUJI THREE" fetchpriority="high">
+      <img src="images/logo/three-smiles.webp" alt="FUJI THREE" fetchpriority="high">
       <img class="header-logo-smile" src="images/logo/three_smile.webp" alt="THREE smiles">
     </a>
 
@@ -88,7 +88,7 @@ const headerHTML = `
 
   <div class="drawer-inner">
     <a href="./" class="drawer-logo">
-      <img src="images/logo/three-tmiles.webp" alt="FUJI THREE">
+      <img src="images/logo/three-smiles.webp" alt="FUJI THREE">
     </a>
 
     <nav class="drawer-nav">
@@ -175,7 +175,7 @@ const footerHTML = `
   <div class="footer-container">
     <div class="footer-top">
       <a href="./" class="footer-logo">
-        <img src="images/logo/three-tmiles.webp" alt="FUJI THREE">
+        <img src="images/logo/three-smiles.webp" alt="FUJI THREE">
       </a>
 
       <nav class="footer-nav">
